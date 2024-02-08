@@ -55,6 +55,32 @@ export default function Layout() {
           }
         }}
       />
+
+<Tabs.Screen
+        name="tab3"
+        options={{
+          title: "Character",
+          tabBarIcon(props) {
+            return (
+              <MaterialCommunityIcons
+                name="two-factor-authentication"
+                {...props}
+              />
+            );
+          },
+          headerLeft() {
+            return (
+              <Button
+                ml="$2.5"
+                onPress={() => router.push("/")}
+              >
+                <MaterialCommunityIcons name="arrow-left" />
+              </Button>
+            );
+          }
+        }}
+      />
+
     </Tabs>
   );
 }

@@ -1,16 +1,17 @@
 import { H1, H5,ScrollView } from "tamagui";
 import { MyStack } from "../../components/MyStack";
 import {DemoCard} from "../../components/Card";
+import { CharacterCard } from "../../components/Character";
 
 export default function Tab1() {
   return (
     <>
-    <H1  style={styles.dashText}>DASHBOARD</H1>
-    <H5  style={styles.dashText}>FILMS</H5>
+    <H1  style={styles.dashText}>SCENE1</H1>
+    <H5  style={styles.dashText}>CHARACTER</H5>
   
     <ScrollView>
     <MyStack>
-      <DemoCard/>
+      <CharacterCard/>
     </MyStack>
     </ScrollView>
     </>
